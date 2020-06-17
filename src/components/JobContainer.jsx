@@ -36,6 +36,9 @@ function JobContainer({ companyDetails, setFilterBy, filterBy }) {
               ? "highlight"
               : ""
           }
+          transformTemplate={(props, transform) =>
+            transform.replace(" translateZ(0)", "")
+          }
           exit="hide"
         >
           <div className="job-logo">
